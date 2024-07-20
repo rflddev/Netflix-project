@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/favicon" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+</head>
+<body>
+<div class="nav" id="nav">
+    
+        <img class="nav__logo" src="Logo one.png" alt="">
+        <img class="nav__user"   src="Avatar logo.png" alt="">
+</div>
+<header class="banner">
+    <div class="banner__contents">
+        <h1 class="banner__titles"> Cobra Kai</h1>
+        <div class="banner__buttons">
+            <button class="banner__buton"><link link="https://www.youtube.com/watch?v=4i21ty_umRM">Assistir</button>
+            <button class="banner__buton">Minha Lista</button>
+        </div>
+    <h1 class="banner__description">
+        Trinta e quatro anos depois de Daniel e Johnny Lawrence se enfrentarem,a rivalidade entre os  
+        <br>
+        dois ressurge quando Lawrence decide retomar sua vida por meio do infame dojo Cobra Kai. 
+         <br>
+        Esgotado e completamente falido, Johnny vê a oportunidade de treinar jovens socialmente inaptos 
+    </h1>
+    </div>
+    <div class="banner--fadeBottom">
+    </div>
+</header>
+<div class="row">
+    <h2>ORIGINAIS NETLIX</h2>
+    <div class="row__posters">
+        <img class="row__posters row__posterLarge" src="Stranger things.jpg">
+        <img class="row__posters row__posterLarge" src="Lupin.jpeg">
+        <img class="row__posters row__posterLarge" src="La casa de papel coreia.jpg">
+        <img class="row__posters row__posterLarge" src="wednesday.jpeg">
+    </div>
+
+       <h2>TERROR</h2>
+    <div class="row__posters">
+        <img class="row__posters row__posterLarge" src="Van Helsing.jpg">
+        <img class="row__posters row__posterLarge" src="1922.jpeg">
+        <img class="row__posters row__posterLarge" src="creep.jpg">
+        <img class="row__posters row__posterLarge" src="Escolha.jpg">
+    </div>
+</div>
+
+<script href="home.js">
+    const nav = document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+    if(window.scrollY >= 100){
+        nav.classList.add('nav__black');
+    } else {
+        nav.classList.remove('nav__black')
+    }
+})
+</script>
+</body>
+</html>
